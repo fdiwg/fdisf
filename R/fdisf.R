@@ -8,6 +8,7 @@
 #' @import lwgeom
 #' @import terra
 #' @import geosphere
+#' @importFrom stringi stri_pad
 #'
 #' @name fdisf
 #' @author Emmanuel Blondel \email{emmanuel.blondel1@@gmail.com}
