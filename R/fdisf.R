@@ -2,6 +2,7 @@
 #'
 #' fdisf provides a set of spatial features for fisheries data interoperability
 #' 
+#' @importFrom methods as
 #' @import parallel
 #' @import tidyr
 #' @import sf

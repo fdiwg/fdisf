@@ -9,7 +9,7 @@ convert_CWP_grid(grid_code, target_grid_type_code = grid_1x1)
 \arguments{
 \item{grid_code}{A CWP grid code}
 
-\item{grid_type_code}{The type of CWP grid (one among \code{\link{grid_1x1}}, \code{\link{grid_5x5}}, \code{\link{grid_10x10}}, \code{\link{grid_10x20}}, \code{\link{grid_20x20}} and \code{\link{grid_30x30}})}
+\item{target_grid_type_code}{The type of CWP grid (one among \code{\link{grid_1x1}}, \code{\link{grid_5x5}}, \code{\link{grid_10x10}}, \code{\link{grid_10x20}}, \code{\link{grid_20x20}} and \code{\link{grid_30x30}})}
 }
 \value{
 The CWP grid code for the grid of type \code{grid_type_code} that contains the main corner of the original grid

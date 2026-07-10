@@ -158,7 +158,7 @@ convert_to_CWP_grid = function(lon, lat, grid_type_code = grid_5x5) {
 #'Function copied from iotc_core_gis_cwp_utils (https://github.com/iotc-secretariat/iotc-lib-core-gis-cwp/blob/master/R/iotc_core_gis_cwp_utils.R)
 #'Converts a CWP grid code into another CWP grid code of a given type
 #'@param grid_code A CWP grid code
-#'@param grid_type_code The type of CWP grid (one among \code{\link{grid_1x1}}, \code{\link{grid_5x5}}, \code{\link{grid_10x10}}, \code{\link{grid_10x20}}, \code{\link{grid_20x20}} and \code{\link{grid_30x30}})
+#'@param target_grid_type_code The type of CWP grid (one among \code{\link{grid_1x1}}, \code{\link{grid_5x5}}, \code{\link{grid_10x10}}, \code{\link{grid_10x20}}, \code{\link{grid_20x20}} and \code{\link{grid_30x30}})
 #'@return The CWP grid code for the grid of type \code{grid_type_code} that contains the main corner of the original grid
 #'@export
 #'@examples convert_CWP_grid("5201123", grid_5x5)

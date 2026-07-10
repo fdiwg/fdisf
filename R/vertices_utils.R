@@ -41,7 +41,7 @@ add_vertices <- function(sf, each = 0.1, parallel = FALSE, ...){
 #' @description Calculates the distance between each pair of coordinate. The distance
 #' is computed with the \link[geosphere]{distGeo} function.
 #' 
-#' @param sf an object of class \code{sf}
+#' @param features an object of class \code{sf}
 #' @return an object of class \code{data.frame} including vertices indexes and the distance
 #' 
 #' @author Emmanuel Blondel \email{emmanuel.blondel1@@gmail.com}
@@ -63,7 +63,7 @@ distance_between_vertices = function(features){
 #' @description Calculates the bearing between each pair of coordinate. The bearing
 #' is computed with the \link[geosphere]{bearingRhumb} function.
 #' 
-#' @param sf an object of class \code{sf}
+#' @param features an object of class \code{sf}
 #' @return an object of class \code{data.frame} including vertices indexes and the bearing
 #' 
 #' @author Emmanuel Blondel \email{emmanuel.blondel1@@gmail.com}

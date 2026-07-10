@@ -7,7 +7,7 @@
 distance_between_vertices(features)
 }
 \arguments{
-\item{sf}{an object of class \code{sf}}
+\item{features}{an object of class \code{sf}}
 }
 \value{
 an object of class \code{data.frame} including vertices indexes and the distance
