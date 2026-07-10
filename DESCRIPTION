@@ -9,7 +9,7 @@ Depends: R (>= 4.2)
 Imports: methods, parallel, tidyr, sf, lwgeom, terra, geosphere, stringi
 Suggests: testthat, usethis
 Description: Spatial features for fisheries data interoperability
-License: MIT
+License: MIT + file LICENSE
 URL: https://github.com/fdiwg/fdisf
 BugReports: https://github.com/fdiwg/fdisf/issues
 RoxygenNote: 7.3.3
