@@ -249,8 +249,8 @@ create_cwp_grid <- function(size = NULL, res = NULL,
     crs = "epsg:4326"
   )    
   r[] <- 1:terra::ncell(r)
-  sf <- r %>%
-    terra::as.polygons() %>%
+  sf <- r |>
+    terra::as.polygons() |>
     sf::st_as_sf()
   
   #densify adding vertices each minute
@@ -261,7 +261,7 @@ create_cwp_grid <- function(size = NULL, res = NULL,
   attrs <- do.call("rbind", applyHandler(1:nrow(sf), function(i){
     poly <- sf[i,]
     pt = suppressWarnings(sf::st_centroid(poly))
-    labpt <- pt %>%
+    labpt <- pt |>
       sf::st_coordinates()
     quadrant <- paste0(ifelse(labpt[2]<0,"S","N"), ifelse(labpt[1]<0,"W","E"))
     quadrant_id <- switch(quadrant, "NE" = 1L, "SE" = 2L, "SW" = 3L, "NW" = 4L)
@@ -282,8 +282,8 @@ create_cwp_grid <- function(size = NULL, res = NULL,
         crs = "epsg:4326"
       ) 
       mr[] <- 1:terra::ncell(mr)
-      mr.sf <- mr %>%
-        terra::as.polygons() %>%
+      mr.sf <- mr |>
+        terra::as.polygons() |>
         sf::st_as_sf()
       mr.seq <- mr.sf[[1]]
       mr.seq <- switch(quadrant,

@@ -1,14 +1,15 @@
 Package: fdisf
-Version: 0.1.20260707
-Date: 2026-07-07
+Version: 0.1.20260713
+Date: 2026-07-13
 Title: Spatial features for fisheries data interoperability
+Description: Provides spatial features for fisheries data interoperability, including GIS functions of interest not available in other R spatial-based packages,
+ and utilities for handling bounding boxes, vertices, and grids.
 Authors@R: c(person("Emmanuel", "Blondel", role = c("aut", "cre"), email = "emmanuel.blondel1@gmail.com", comment = c(ORCID = "0000-0002-5870-5762")),
   person("Arturo", "Muñoz Albero", role = c("ctb")))
 Maintainer: Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 Depends: R (>= 4.2)
-Imports: methods, parallel, tidyr, sf, lwgeom, terra, geosphere, stringi
+Imports: methods, parallel, tidyr, sf, terra, geosphere, stringi
 Suggests: testthat, usethis
-Description: Spatial features for fisheries data interoperability
 License: MIT + file LICENSE
 URL: https://github.com/fdiwg/fdisf
 BugReports: https://github.com/fdiwg/fdisf/issues

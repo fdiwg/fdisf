@@ -6,9 +6,15 @@
 #' @import parallel
 #' @import tidyr
 #' @import sf
-#' @import lwgeom
-#' @import terra
-#' @import geosphere
+#' @importFrom terra rast
+#' @importFrom terra ext
+#' @importFrom terra ncell
+#' @importFrom terra as.polygons
+#' @importFrom geosphere destPoint
+#' @importFrom geosphere bearingRhumb
+#' @importFrom geosphere destPointRhumb
+#' @importFrom geosphere distRhumb
+#' @importFrom geosphere distGeo
 #' @importFrom stringi stri_pad
 #'
 #' @name fdisf

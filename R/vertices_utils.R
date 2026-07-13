@@ -30,7 +30,7 @@ add_vertices <- function(sf, each = 0.1, parallel = FALSE, ...){
       out_coords <- as.matrix(out_coords)
       return(out_coords)
     }))
-    p$geometry <- sf::st_polygon(list(newcoords)) %>% sf::st_sfc(crs = 4326)
+    p$geometry <- sf::st_polygon(list(newcoords)) |> sf::st_sfc(crs = 4326)
     return(p)
   }, ...))
   return(sf)
